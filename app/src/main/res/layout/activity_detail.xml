@@ -8,10 +8,11 @@
 
     <ImageView
         android:id="@+id/gambardetail"
-        android:layout_width="match_parent"
-        android:layout_height="161dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="600px"
+        android:layout_height="400px"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -19,27 +20,32 @@
         android:id="@+id/tv_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Nama Makanan"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/gambardetail"
         app:layout_constraintTop_toBottomOf="@+id/gambardetail" />
 
     <TextView
         android:id="@+id/deskripsidetail"
-        android:layout_width="220dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Deskripsi"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/tv_nama"
         app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
 
     <TextView
         android:id="@+id/hargadetail"
-        android:layout_width="49dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="Harga"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/deskripsidetail"
         app:layout_constraintTop_toBottomOf="@+id/deskripsidetail" />
 </androidx.constraintlayout.widget.ConstraintLayout>

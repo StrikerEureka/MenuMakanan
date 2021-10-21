@@ -2,14 +2,17 @@ package com.example.menumakanan;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -38,19 +41,17 @@ public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.ViewHold
         holder.textNama.setText(makanan.getNama());
         holder.textHarga.setText(makanan.getHarga());
 //        holder.textDeskripsi.setText(makanan.getDeskripsi());
-//        holder.imageView.setImageResource(makanan.getId_gambar());
+        holder.imageView.setImageResource(makanan.getId_gambar());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                Toast.makeText(holder.itemView.getContext(), makanan.getNama(), Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(v.getContext(), DetailActivity.class);
-
                 intent.putExtra("nama", makanan.getNama());
                 intent.putExtra("harga", makanan.getHarga());
                 intent.putExtra("deskripsi", makanan.getDeskripsi());
                 intent.putExtra("gambar", makanan.getId_gambar());
-
                 v.getContext().startActivity(intent);
             }
         });
@@ -62,19 +63,16 @@ public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.ViewHold
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-
         public TextView textNama, textHarga, textDeskripsi;
         public ImageView imageView;
-        public ConstraintLayout itemView;
-
+//        public LinearLayout itemView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             textNama = (TextView) itemView.findViewById(R.id.textNama);
             textHarga = (TextView) itemView.findViewById(R.id.textHarga);
 //            textDeskripsi = (TextView) itemView.findViewById(R.id.textDeskripsi);
-//            imageView = (ImageView) itemView.findViewById(R.id.imageView);
-            this.itemView = (ConstraintLayout) itemView.findViewById(R.id.mainLayout);
-
+            imageView = (ImageView) itemView.findViewById(R.id.imageView);
+//            this.itemView = (LinearLayout) itemView.findViewById(R.id.mainLayout);
         }
     }
 }

@@ -8,31 +8,27 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity {
-
     String nama="";
     String harga="";
     String deskripsi="";
-    String gambar="";
-
+    int gambar=0;
     TextView tvNama;
     TextView hargadetail;
     TextView deskripsidetail;
     ImageView gambardetail;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             nama = bundle.getString("nama");
             harga = bundle.getString("harga");
             deskripsi = bundle.getString("deskripsi");
-            gambar = bundle.get("gambar");
-
+            gambar = bundle.getInt("gambar");
         }
+
         tvNama = findViewById(R.id.tv_nama);
         tvNama.setText(nama);
 
@@ -44,10 +40,5 @@ public class DetailActivity extends AppCompatActivity {
 
         gambardetail = findViewById(R.id.gambardetail);
         gambardetail.setImageResource(gambar);
-
-
-//        Log.d(">>>nama", nama);
-
     }
-
 }

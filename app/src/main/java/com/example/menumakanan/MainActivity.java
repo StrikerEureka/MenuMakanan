@@ -46,16 +46,16 @@ public class MainActivity extends AppCompatActivity {
         listmakanan.add(new Makanan("Kari Ayam",
                 "17.500",
                 "Ayam di kari-in dong",
-                R.drawable.ayam_geprek));
+                R.drawable.kari_ayam));
 
         listmakanan.add(new Makanan("Tahu Bulat",
                 "500",
                 "Tahu bulat di goreng dadakan",
-                R.drawable.ayam_geprek));
+                R.drawable.tahu_bulat));
 
         listmakanan.add(new Makanan("Salad Buah",
                 "12.000",
                 "Buah dibikin salad dong",
-                R.drawable.ayam_geprek));
+                R.drawable.salad_buah));
     }
 }
