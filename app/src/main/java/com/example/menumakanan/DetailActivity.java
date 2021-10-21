@@ -33,7 +33,7 @@ public class DetailActivity extends AppCompatActivity {
         tvNama.setText(nama);
 
         hargadetail = findViewById(R.id.hargadetail);
-        hargadetail.setText(harga);
+        hargadetail.setText("Harga : "+harga);
 
         deskripsidetail = findViewById(R.id.deskripsidetail);
         deskripsidetail.setText(deskripsi);

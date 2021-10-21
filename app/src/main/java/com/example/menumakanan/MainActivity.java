@@ -30,32 +30,32 @@ public class MainActivity extends AppCompatActivity {
         this.listmakanan = new ArrayList<>();
         listmakanan.add(new Makanan("Pecel Lele",
                 "15.000",
-                "Pecel lele goreng dong",
+                "Ikan lele segar yang digoreng dengan tepung berkualitas hingga crispy disajikan dengan sambal yang menggugah selera.",
                 R.drawable.pecel_lele));
 
         listmakanan.add(new Makanan("Nasi Goreng Mercon",
                 "14.500",
-                "Nasi goreng pedes dong",
+                "Perpaduan antara nasi, sayuran, topping, dan cabai pilihan yang di olah bersama dan menghasilkan nasi goreng mercon yang mantap. ",
                 R.drawable.nasi_goreng));
 
         listmakanan.add(new Makanan("Ayam Geprek Keju",
                 "20.000",
-                "Ayam di geprek terus dikejuin dong",
+                "Ayam goreng crispy yang di geprek dan disiram dengan saus keju mozarella yang lumer dan nikmat.",
                 R.drawable.ayam_geprek));
 
         listmakanan.add(new Makanan("Kari Ayam",
                 "17.500",
-                "Ayam di kari-in dong",
+                "Sup kari ayam yang di olah dengan bumbu tradisional berkualtias yang menghasilkan aroma dan rasa yang nikmat.",
                 R.drawable.kari_ayam));
 
         listmakanan.add(new Makanan("Tahu Bulat",
                 "500",
-                "Tahu bulat di goreng dadakan",
+                "Tahu bulat premium yang di goreng dadakan tapi tidak di atas mobil bak terbuka.",
                 R.drawable.tahu_bulat));
 
         listmakanan.add(new Makanan("Salad Buah",
                 "12.000",
-                "Buah dibikin salad dong",
+                "Campuran buah-buahan berkualitas yang disajikan dengan sirup manis dan disajikan saat dingin.",
                 R.drawable.salad_buah));
     }
 }
